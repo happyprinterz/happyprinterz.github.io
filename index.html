@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>happyprinterz — links</title>
   <meta name="description" content="Official links for happyprinterz: GitHub, Shop, Telegram, and Email.">
-  
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://happyprinterz.github.io/">
@@ -21,15 +22,21 @@
   <meta property="twitter:image" content="https://happyprinterz.github.io/i.jpg">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Comic+Neue:wght@300;400;700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Comic+Neue:wght@300;400;700&display=swap&subset=cyrillic"
+    rel="stylesheet">
 
   <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%F0%9F%92%A5%3C/text%3E%3C/svg%3E">
-  
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%F0%9F%92%A5%3C/text%3E%3C/svg%3E">
+
   <!-- Styles -->
   <link rel="stylesheet" href="style.css">
   <link rel="manifest" href="manifest.json">
 </head>
+
 <body>
   <div class="overlay" aria-hidden="true"></div>
 
@@ -40,6 +47,16 @@
         <div class="site-title">happyprinterz</div>
         <div class="subtitle">my links</div>
       </div>
+      <button class="btn-icon share-btn" id="shareBtn" aria-label="Share this page" title="Share">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="18" cy="5" r="3"></circle>
+          <circle cx="6" cy="12" r="3"></circle>
+          <circle cx="18" cy="19" r="3"></circle>
+          <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+          <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+        </svg>
+      </button>
     </header>
 
     <section class="links" aria-label="links list">
@@ -67,13 +84,22 @@
         <div class="link-desc">I answer faster in Telegram</div>
       </a>
 
-      <a class="link-card" href="mailto:op206dip8@mozmail.com" target="_blank" rel="noopener noreferrer">
-        <div class="link-top">
-          <div class="link-title"><span class="link-emoji">✉️</span> Email</div>
-          <div class="small">Feedback</div>
-        </div>
-        <div class="link-desc">Noreply Email.</div>
-      </a>
+      <div class="link-group">
+        <a class="link-card email-card" href="mailto:op206dip8@mozmail.com" target="_blank" rel="noopener noreferrer">
+          <div class="link-top">
+            <div class="link-title"><span class="link-emoji">✉️</span> Email</div>
+            <div class="small">Feedback</div>
+          </div>
+          <div class="link-desc">Noreply Email.</div>
+        </a>
+        <button class="copy-btn" id="copyEmailBtn" aria-label="Copy email address" title="Copy Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+        </button>
+      </div>
     </section>
 
     <footer class="footer">
@@ -84,4 +110,5 @@
   <!-- Scripts -->
   <script src="script.js"></script>
 </body>
+
 </html>

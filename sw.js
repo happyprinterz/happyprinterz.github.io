@@ -1,4 +1,4 @@
-const CACHE_NAME = 'happyprinterz-v1';
+const CACHE_NAME = 'happyprinterz-v2';
 const ASSETS = [
     './',
     './index.html',
